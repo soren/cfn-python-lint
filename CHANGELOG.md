@@ -1,3 +1,32 @@
+### 0.24.2
+###### CloudFormation Specifications
+- Add missing values for LifecyclePolicy API (pull #[1128](https://github.com/aws-cloudformation/cfn-python-lint/pull/1128))
+- Update CloudFormation specs to 6.1.0 (pull #[1134])(https://github.com/aws-cloudformation/cfn-python-lint/pull/1134)
+- Update Pricing and SSM data to 2019.09.20 (pull #[1134])(https://github.com/aws-cloudformation/cfn-python-lint/pull/1134)
+###### Fixes
+- Update [E1029](https://github.com/aws-cloudformation/cfn-python-lint/blob/master/docs/rules.md#E1029)
+to include cognito-identity keys to list of excluded resourse when checking if Fn sub is needed (pull #[1136])(https://github.com/aws-cloudformation/cfn-python-lint/pull/1136)
+
+
+### 0.24.1
+###### CloudFormation Specifications
+- Update CloudFormation specs to 6.0.0 (pull #[1126](https://github.com/aws-cloudformation/cfn-python-lint/pull/1126))
+###### Fixes
+- Update AWS::SQS::Queue.ReceiveMessageWaitTimeSeconds to allow 0 value (pull #[1123](https://github.com/aws-cloudformation/cfn-python-lint/pull/1123))
+- AWS::EC2::SecurityGroup.Description StringMin and StringMax should be integers (pull #[1125](https://github.com/aws-cloudformation/cfn-python-lint/pull/1125))
+- AWS::ApiGateway::GatewayResponse.ResponseType typo (pull #[1126](https://github.com/aws-cloudformation/cfn-python-lint/pull/1126))
+
+### 0.24.0
+###### Features
+- Move rule classes from cfnlint into cfnlint.rules (pull #[1098](https://github.com/aws-cloudformation/cfn-python-lint/pull/1098))
+###### CloudFormation Specifications
+- Update IAM policies as of 2019.09.03 (pull #[1120](https://github.com/aws-cloudformation/cfn-python-lint/pull/1120))
+- Update CloudFormation specs from pricing and SSM data as of 2019.09.03 (pull #[1120](https://github.com/aws-cloudformation/cfn-python-lint/pull/1120))
+- Add a lot of min/max values to the specs (pull #[1110](https://github.com/aws-cloudformation/cfn-python-lint/pull/1110) and pull #[1116](https://github.com/aws-cloudformation/cfn-python-lint/pull/1116))
+###### Fixes
+- Add me-south-1 to supported regions (pull #[1113](https://github.com/aws-cloudformation/cfn-python-lint/pull/1113))
+- Fix an issue where the spec file was referencing instance profiles for Glue Resources (pull #[1114](https://github.com/aws-cloudformation/cfn-python-lint/pull/1114))
+
 ### 0.23.5
 ###### CloudFormation Specifications
 - Switch AWS Batch SpotIamFleetRole to Role Arn (pull #[1111](https://github.com/aws-cloudformation/cfn-python-lint/pull/1111))
